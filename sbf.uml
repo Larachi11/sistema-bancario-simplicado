@@ -1,0 +1,35 @@
+@startuml
+
+class Cliente {
+    - String id
+    - String nome
+    - String email
+    - String cpf
+    - String endereco
+    + autenticar() : boolean
+}
+
+class Conta {
+    - String id
+    - Number saldo 
+    + depositar() : void
+    + sacar() : void
+    + transferir() : void
+    + adicionarHistorico() : void
+    + verSaldo() : void
+}   
+
+class Transacao {
+    - String id
+    - Date data
+    - Number valor
+    - String debitoOuCredito
+    - String operacao 
+    + criarTransferencia() : void
+}
+
+''Relacionamento e Multiplicidade
+Cliente "1" -- "0..*" Conta : possui
+Conta "1" *-- "0..*" Transacao : contem 
+
+@enduml

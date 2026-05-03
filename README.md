@@ -1,17 +1,12 @@
 # sistema-bancario-simplicado
 
-# Projeto: Como organizar sua vida Financeira com Planilhas Inteligentes e IA
+## Descrição 
+Sistema bancário simplificado, permite cadastrar clientes, criar contas e fazer movimentações financeiras, verificando saldo e registrando as movimentações.
 
+## Decisões
+Criei as classes: Cliente, Conta e Transação.
+Optei por armazenar o Cliente e o array de transações dentro da classe Conta.
+Para os IDs optei por geração automática pelo JavaScript.
 
- > ℹ️ **NOTE:** Este é o repositório desenvolvido durante o curso no qual fui aluna na plataforma da [ADATECH] em parceria com o Caixaverso.
-
-Projeto com o objetivo de fazer uma planilha inteligente usando IAs.
-
-
-## 💻 Tecnologias utilizadas no projeto
-
-- Microsoft Excel
-
-## 👨‍💻 Expert
-
-por _**Larissa Chidi**_
+## Como executar
+``` npx index.ts ```
